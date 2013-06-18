@@ -1,7 +1,7 @@
 iCSSCheckBox
 ============
 
-iPhone style checkbox in CSS3. [Live demo](http://youssefkababe.com/iCSSCheckBox/)
+CSS3 iPhone style checkbox. [Live demo](http://youssefkababe.com/iCSSCheckBox/)
 
 ![iCSSCheckbox](http://i.imgur.com/KVDW2vB.png)
 
