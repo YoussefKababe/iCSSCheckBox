@@ -18,7 +18,7 @@ Use the following html code to place the checkbox in your page:
 ```html
 <label class="icheckwraper">
     <span class="icheckbox">
-      <input type="checkbox" id="icheckbox1" checked>
+      <input type="checkbox" id="icheckbox1">
       <label class="ihandle" for="icheckbox1"></label>
     </span>
     <label class="ichecklabel" for="icheckbox1">I'm a cool iCheckBox!</label>
