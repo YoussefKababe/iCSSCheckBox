@@ -1,0 +1,91 @@
+.icheckwraper {
+  position: relative;
+  height: 32px;
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+}
+
+.icheckwraper .ichecklabel {
+  position: relative;
+  width: 100%;
+  top: -10px;
+  cursor: pointer;
+}
+
+.icheckbox {
+  width: 100px;
+  height: 32px;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  overflow: hidden;
+  border: 1px solid rgb(102,102,102);
+  border-radius: 4px;
+}
+
+.icheckbox input[type=checkbox] {
+  display: none;
+}
+
+.icheckbox .ihandle {
+  width: 50px;
+  height: 30px;
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: left .2s ease-in;
+  -webkit-transition: left .2s ease-in;
+  -moz-transition: left .2s ease-in;
+  -o-transition: left .2s ease-in;
+  -ms-transition: left .2s ease-in;
+  background: #d9d9d8;
+    background: -moz-linear-gradient(top,  #d9d9d8 0%, #fcfcfc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d9d9d8), color-stop(100%,#fcfcfc));
+    background: -webkit-linear-gradient(top,  #d9d9d8 0%,#fcfcfc 100%);
+    background: -o-linear-gradient(top,  #d9d9d8 0%,#fcfcfc 100%);
+    background: -ms-linear-gradient(top,  #d9d9d8 0%,#fcfcfc 100%);
+    background: linear-gradient(top,  #d9d9d8 0%,#fcfcfc 100%);
+  border: 1px solid #fff;
+  border-right: 1px solid #a2a2a2;
+  border-bottom: 1px solid #a2a2a2;
+}
+
+.icheckbox .ihandle:after,
+.icheckbox .ihandle:before {
+  content: "No";
+  display: inline-block;
+  position: absolute;
+  top: -1px;
+  left: 48px;
+  width: 52px;
+  height: 24px;
+  text-align: center;
+  padding-top: 8px;
+  background: #f2f3f2;
+    background: -moz-linear-gradient(top,  #8b8c8b 0%, #f2f3f2 50%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8b8c8b), color-stop(50%,#f2f3f2));
+    background: -webkit-linear-gradient(top,  #8b8c8b 0%,#f2f3f2 50%);
+    background: -o-linear-gradient(top,  #8b8c8b 0%,#f2f3f2 50%);
+    background: -ms-linear-gradient(top,  #8b8c8b 0%,#f2f3f2 50%);
+    background: linear-gradient(top,  #8b8c8b 0%,#f2f3f2 50%);
+  color: #8b8b8b;
+  z-index: -1;
+}
+
+.icheckbox .ihandle:before {
+  content: "Yes";
+  left: -51px;
+  background: #3269aa;
+    background: -moz-linear-gradient(top,  #3269aa 0%, #82b3f4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3269aa), color-stop(100%,#82b3f4));
+    background: -webkit-linear-gradient(top,  #3269aa 0%,#82b3f4 100%);
+    background: -o-linear-gradient(top,  #3269aa 0%,#82b3f4 100%);
+    background: -ms-linear-gradient(top,  #3269aa 0%,#82b3f4 100%);
+    background: linear-gradient(top,  #3269aa 0%,#82b3f4 100%);
+  color: white;
+}
+
+.icheckbox input[type=checkbox]:checked + .ihandle {
+  left: 50px;
+}
