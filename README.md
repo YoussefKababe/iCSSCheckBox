@@ -3,7 +3,7 @@ iCSSCheckBox
 
 iPhone style checkbox in CSS3
 
-![iCSSCheckbox](http://i.imgur.com/IK0Ninu.png)
+![iCSSCheckbox](http://i.imgur.com/KVDW2vB.png)
 
 ### How to use:
 
