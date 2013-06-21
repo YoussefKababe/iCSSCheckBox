@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <title>iCSSCheckBox</title>
   <link rel="stylesheet" href="icsscheckbox.css">
+  <style type="text/css">
+    .icheckbox #custom-handle:before {
+      content: "On";
+    }
+    
+    .icheckbox #custom-handle:after {
+      content: "Off";
+    }
+  </style>
 </head>
 <body>
   <label class="icheckwraper">
@@ -16,7 +25,7 @@
   <label class="icheckwraper">
     <label class="icheckbox">
       <input type="checkbox" id="icheckbox2">
-      <label class="ihandle" for="icheckbox2"></label>
+      <label class="ihandle" id="custom-handle" for="icheckbox2"></label>
     </label>
     <label class="ichecklabel" for="icheckbox2">I'm another cool iCSSCheckBox!</label>
   </label>
