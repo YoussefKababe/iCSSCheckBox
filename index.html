@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
+    <link rel="stylesheet" type="text/css" href="stylesheets/icsscheckbox.css">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -33,7 +33,22 @@
 
 <p>CSS3 iPhone style checkbox.</p>
 
-<p><img src="http://i.imgur.com/KVDW2vB.png" alt="iCSSCheckbox"></p>
+<p>
+  <label class="icheckwraper">
+    <span class="icheckbox">
+      <input type="checkbox" id="icheckbox1" checked>
+      <label class="ihandle" for="icheckbox1"></label>
+    </span>
+    <label class="ichecklabel" for="icheckbox1">I'm a cool iCSSCheckBox!</label>
+  </label><br>
+  <label class="icheckwraper">
+    <label class="icheckbox">
+      <input type="checkbox" id="icheckbox2">
+      <label class="ihandle" id="custom-handle" for="icheckbox2"></label>
+    </label>
+    <label class="ichecklabel" for="icheckbox2">I'm another cool iCSSCheckBox!</label>
+  </label>
+</p>
 
 <h3>
 <a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use:</h3>
