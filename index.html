@@ -3,50 +3,48 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>iCSSCheckbox by YoussefKababe</title>
-
+    <title>iCSSCheckBox by YoussefKababe</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/icsscheckbox.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
   <body>
-    <div class="wrapper">
+
       <header>
-        <p class="view"><a href="https://github.com/YoussefKababe/iCSSCheckBox">View the Project on GitHub <small>YoussefKababe/iCSSCheckBox</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/YoussefKababe/iCSSCheckBox/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/YoussefKababe/iCSSCheckBox/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/YoussefKababe/iCSSCheckBox">View On <strong>GitHub</strong></a></li>
-        </ul>
+        <h1>iCSSCheckBox</h1>
+        <p>CSS3 iPhone style checkbox</p>
       </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/YoussefKababe/iCSSCheckBox" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/YoussefKababe/iCSSCheckBox/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/YoussefKababe/iCSSCheckBox/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
       <section>
         <h1>
 <a name="icsscheckbox" class="anchor" href="#icsscheckbox"><span class="octicon octicon-link"></span></a>iCSSCheckBox</h1>
 
-<p>CSS3 iPhone style checkbox</p>
+<p>CSS3 iPhone style checkbox.</p>
 
-<p>
-  <label class="icheckwraper">
-    <span class="icheckbox">
-      <input type="checkbox" id="icheckbox1" checked>
-      <label class="ihandle" for="icheckbox1"></label>
-    </span>
-    <label class="ichecklabel" for="icheckbox1">I'm a cool iCSSCheckBox!</label>
-  </label><br>
-  <label class="icheckwraper">
-    <label class="icheckbox">
-      <input type="checkbox" id="icheckbox2">
-      <label class="ihandle" for="icheckbox2"></label>
-    </label>
-    <label class="ichecklabel" for="icheckbox2">I'm another cool iCSSCheckBox!</label>
-  </label>
-</p>
+<p><img src="http://i.imgur.com/KVDW2vB.png" alt="iCSSCheckbox"></p>
 
 <h3>
 <a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use:</h3>
@@ -68,22 +66,26 @@
 </pre></div>
 
 <p>Don't forget to replace "icheckbox1" for other checkboxes if you are using multiple ones in your page.</p>
+
+<p>You can also change the Yes/No to something else by adding a custom styling before closing the head tag:</p>
+
+<div class="highlight"><pre><span class="nt">&lt;style </span><span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
+    <span class="nc">.icheckbox</span> <span class="nc">.ihandle</span><span class="nd">:before</span> <span class="p">{</span>
+      <span class="k">content</span><span class="o">:</span> <span class="s2">"On"</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.icheckbox</span> <span class="nc">.ihandle</span><span class="nd">:after</span> <span class="p">{</span>
+      <span class="k">content</span><span class="o">:</span> <span class="s2">"Off"</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+</pre></div>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/YoussefKababe">YoussefKababe</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p>Project maintained by <a href="https://github.com/YoussefKababe">YoussefKababe</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-36442752-4', 'youssefkababe.com');
-      ga('send', 'pageview');
-
-  </script>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
   </body>
 </html>
