@@ -40,3 +40,6 @@ You can also change the Yes/No to something else by adding a custom styling befo
     }
 </style>
 ```
+### License:
+
+Released under the [WTFPL](http://www.wtfpl.net/) license.
